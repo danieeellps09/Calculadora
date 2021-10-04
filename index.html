@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vara</title>
+    <link rel="stylesheet" href="minhacalculadora.css">
+</head>
+<body>  
+    <div class="Section">
+    <h1>Minha Calculadora</h1>
+
+    <p>Primeiro Número</p>
+    <input type="number" name="" id="n1" placeholder="primeiro algarismo"> <br>
+    <p>Segundo número </p>
+    <input type="Number"  id="n2" placeholder="Segundo algarismo" > <br>
+    <br>
+    <button onclick="somar()"  >Somar</button>
+    <button onclick="subtrair()">Subtrair</button>
+    <button onclick="multiplicar()">Multiplicar</button>
+     <button onclick="dividir()">Dividir</button> 
+    <br>
+     <p>O resultado é <span> </span></p>
+
+<script>
+    
+    var n1 = document.querySelector ('#n1')
+    var n2 = document.querySelector ('#n2')
+    var resultado = document.querySelector ('span')
+
+function somar(){
+    resultado.innerHTML = parseInt(n1.value) + parseInt (n2.value)
+
+}
+
+function subtrair(){
+    resultado.innerHTML = parseInt(n1.value) - parseInt (n2.value)
+
+}
+function multiplicar(){
+    resultado.innerHTML = parseInt(n1.value) * parseInt (n2.value)
+
+}
+function dividir(){
+    resultado.innerHTML = parseInt(n1.value) / parseInt (n2.value)
+
+}
+
+</script>
+
+    </div>
+
+
+
+</body>
+</html>

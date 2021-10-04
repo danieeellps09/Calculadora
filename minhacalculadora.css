@@ -1,0 +1,19 @@
+
+body {
+margin: 25%;
+background-image: url(Dg7KRA6VMAA9GQ5.jpg);
+background-size: cover;
+background-repeat: repeat-y;
+
+}
+
+.Section {
+    border-style: solid;
+align-items: center;
+    background: chartreuse;
+    padding-left: 100px;
+    flex-direction: column;
+    margin-bottom: 900px;
+
+}
+
